@@ -1,0 +1,89 @@
+.newNote
+    background: $bgColor2
+    border-radius: 20px
+    .nnContainer
+        border-radius: inherit
+        background: $bgColor3
+        padding: 10px
+        .nnHeader
+            background: $bgColor2
+            width: 95%
+            border-radius: 20px 20px 0 0
+            margin: auto
+            box-shadow: 2px 2px 6px #191919
+        .nnSubmit 
+            display: block
+            margin: auto
+            padding: 5px 20px
+.noNotesContainer
+    display: block
+    width: fit-content
+    margin: auto
+    background: $bgColor2
+    border-radius: 20px
+    .noNotes 
+        font-size: 18px
+        padding: 20px 50px
+        border: 3px solid $fontColor2
+        border-radius: inherit
+.notesContainer 
+    margin-top: 30px 
+    .noteAddNote 
+        display: block
+        text-decoration: none
+        color: $fontColor1
+        width: fit-content
+        margin: auto
+        font-size: 18px
+        background: $bgColor3
+        padding: 5px 20px
+        border-radius: 10px
+        &:hover 
+            background: $bgColor2
+            cursor: pointer
+    .note 
+        margin: 20px auto
+        background: $bgColor3
+        padding: 2px
+        border-radius: 20px
+        max-width: 600px
+        .noteHeader 
+            background: $bgColor2
+            width: 99%
+            border-radius: 20px 20px 0 0
+            margin: auto
+            .noteTitle 
+                text-align: center
+                font-weight: lighter
+                .noteTitleWords 
+                    text-decoration: none
+                    color: $fontColor1
+                    &:hover 
+                        text-decoration: underline
+                        color: $fontColor2
+            .noteDelete 
+                display: block
+                position: absolute
+                width: fit-content
+                height: fit-content
+                top: 3px
+                right: 20px
+                color: $fontColor1
+                text-decoration: none
+                font-size: 20px
+                &:hover 
+                    color: #777777
+
+        .noteBody 
+            background: $bgColor1
+            width: 99% 
+            margin: auto
+            border-radius: 0 0 20px 20px
+            .noteDescription
+                text-align: justify
+                font-size: 18px
+                margin: auto
+                width: fit-content
+                max-width: 90%
+                color: $fontColor2
+                font-weigth: lighter

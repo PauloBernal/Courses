@@ -1,0 +1,269 @@
+body {
+  background: #0F2027;
+  color: #EEEEED;
+  overflow-x: hidden;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  background: #0F2027;
+  width: 100vw;
+  text-align: center;
+}
+
+.footer .footerHeader {
+  display: none;
+}
+
+.footer .footerBody {
+  background: #203A43;
+}
+
+.footer .footerBtnContainer {
+  width: 40vw;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  min-width: 300px;
+  padding: 0;
+}
+
+.navbar {
+  background: #2C5364;
+  color: #EEEEED;
+}
+
+.navbar .navbarBrand {
+  color: #BBBBBB;
+}
+
+.navbar .navbarBrand:hover {
+  color: #EEEEED;
+}
+
+.navbar .navbarToggler {
+  color: #203A43;
+}
+
+.navbar .navbarToggler:hover {
+  background: #203A43;
+}
+
+.navbar .navbarToggler:active {
+  background: #2C5364;
+}
+
+.navbar .navbarItem .navbarLink {
+  color: #BBBBBB;
+  padding-left: 20px;
+}
+
+.navbar .navbarItem .navbarLink:hover {
+  color: #EEEEED;
+  background: #203A43;
+  text-decoration: underline;
+}
+
+.navbar .navbarItem .navbarLink:active {
+  color: #999999;
+}
+
+.newNote {
+  background: #203A43;
+  border-radius: 20px;
+}
+
+.newNote .nnContainer {
+  border-radius: inherit;
+  background: #2C5364;
+  padding: 10px;
+}
+
+.newNote .nnContainer .nnHeader {
+  background: #203A43;
+  width: 95%;
+  border-radius: 20px 20px 0 0;
+  margin: auto;
+  -webkit-box-shadow: 2px 2px 6px #191919;
+          box-shadow: 2px 2px 6px #191919;
+}
+
+.newNote .nnContainer .nnSubmit {
+  display: block;
+  margin: auto;
+  padding: 5px 20px;
+}
+
+.noNotesContainer {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  background: #203A43;
+  border-radius: 20px;
+}
+
+.noNotesContainer .noNotes {
+  font-size: 18px;
+  padding: 20px 50px;
+  border: 3px solid #BBBBBB;
+  border-radius: inherit;
+}
+
+.notesContainer {
+  margin-top: 30px;
+}
+
+.notesContainer .noteAddNote {
+  display: block;
+  text-decoration: none;
+  color: #EEEEED;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  font-size: 18px;
+  background: #2C5364;
+  padding: 5px 20px;
+  border-radius: 10px;
+}
+
+.notesContainer .noteAddNote:hover {
+  background: #203A43;
+  cursor: pointer;
+}
+
+.notesContainer .note {
+  margin: 20px auto;
+  background: #2C5364;
+  padding: 2px;
+  border-radius: 20px;
+  max-width: 600px;
+}
+
+.notesContainer .note .noteHeader {
+  background: #203A43;
+  width: 99%;
+  border-radius: 20px 20px 0 0;
+  margin: auto;
+}
+
+.notesContainer .note .noteHeader .noteTitle {
+  text-align: center;
+  font-weight: lighter;
+}
+
+.notesContainer .note .noteHeader .noteTitle .noteTitleWords {
+  text-decoration: none;
+  color: #EEEEED;
+}
+
+.notesContainer .note .noteHeader .noteTitle .noteTitleWords:hover {
+  text-decoration: underline;
+  color: #BBBBBB;
+}
+
+.notesContainer .note .noteHeader .noteDelete {
+  display: block;
+  position: absolute;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  top: 3px;
+  right: 20px;
+  color: #EEEEED;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.notesContainer .note .noteHeader .noteDelete:hover {
+  color: #777777;
+}
+
+.notesContainer .note .noteBody {
+  background: #0F2027;
+  width: 99%;
+  margin: auto;
+  border-radius: 0 0 20px 20px;
+}
+
+.notesContainer .note .noteBody .noteDescription {
+  text-align: justify;
+  font-size: 18px;
+  margin: auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 90%;
+  color: #BBBBBB;
+  font-weigth: lighter;
+}
+
+.signUpFrame .signUp {
+  border: none;
+  border-radius: 20px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.signUpFrame .signUp .signUpContainer {
+  background: #2C5364;
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+  width: 70vw;
+  margin: auto;
+  max-width: 580px;
+}
+
+.signUpFrame .signUp .signUpContainer .signUpHeader {
+  background: #203A43;
+  border-radius: 20px 20px 0 0;
+  width: 94%;
+  margin: auto;
+  -webkit-box-shadow: 2px 2px 6px #111;
+          box-shadow: 2px 2px 6px #111;
+}
+
+.signUpFrame .signUp .signUpContainer .signUpHeader .signUpTitle {
+  margin: 0;
+  text-align: center;
+}
+
+.signUpFrame .signUp .signUpContainer .signUpBody {
+  margin-top: 8px;
+}
+
+.signUpFrame .signUp .signUpContainer .signUpBody .signUpInputs {
+  margin-bottom: 25px;
+}
+
+.signUpFrame .signUp .signUpContainer .signUpBody .signUpButton {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  padding: 5px 20px;
+  border-radius: 10px;
+}
+
+.signUpFrame .signUp .signUpContainer .signUpBody .signUpButton:hover {
+  -webkit-box-shadow: 1px 1px 6px #203A43;
+          box-shadow: 1px 1px 6px #203A43;
+}
+
+.signUpFrame .signUp .signUpContainer .signUpBody .signUpButton:active {
+  -webkit-box-shadow: 0.2px 0.2px 6px #203A43;
+          box-shadow: 0.2px 0.2px 6px #203A43;
+}
+/*# sourceMappingURL=main.css.map */

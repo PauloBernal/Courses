@@ -1,0 +1,30 @@
+db.users.insert([
+    {
+        "userID":"0000",
+        "name":"PauloBA",
+        "password":"Kahlua123",
+        "createdAt":new Date("04/01/2021"),
+        "friends":["MateoBA","Melquisedek4","lslq"]
+    },
+    {
+        "userID":"0001",
+        "name":"MateoBA",
+        "password":"Kahlua123",
+        "createdAt":new Date("04/01/2021"),
+        "friends":["PauloBA","Melquisedek4","lslq"]
+    },
+    {
+        "userID":"0002",
+        "name":"Melquisedek4",
+        "password":"mono123",
+        "createdAt":new Date("04/01/2021"),
+        "friends":["PauloBA","MateoBA","lslq"]
+    },
+    {
+        "userID":"0003",
+        "name":"lslq",
+        "password":"iloverobotics",
+        "createdAt":new Date("04/01/2021"),
+        "friends":["PauloBA","MateoBA","Melquisedek4"]
+    },
+])

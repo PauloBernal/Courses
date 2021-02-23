@@ -1,0 +1,19 @@
+<div class="container notesContainer">
+    {{#if nState}}
+    <div class="noNotesContainer">
+        <p class="noNotes">There aren't notes yet</p>
+    </div>
+    {{/if}}
+    {{#each notes}}
+    <div class="card note">
+        <div class="card-header noteHeader">
+            <h2 class="noteTitle"><a class="noteTitleWords" href="/notes/edit/{{id}}">{{title}}</a></h2>
+            <a class="noteDelete" href="/notes/del/{{id}}">x</a>
+        </div>
+        <div class="card-body noteBody">
+            <p class="noteDescription">{{description}}</p>
+        </div>
+    </div>
+    {{/each}}
+    <a class="noteAddNote" href="/notes/new">Add note</a>
+</div>

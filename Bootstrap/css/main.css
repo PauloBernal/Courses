@@ -1,0 +1,26 @@
+body{
+
+    background-color: #000022;
+    color: #F1F1F1;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.va{
+
+    display: inline-block;
+    height: 50px;
+    background-color: #333355;
+    width: fit-content;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.dp{
+
+    background-color: #333355;
+    width: fit-content;
+    padding: 5px;
+    border-radius: 10px;
+}

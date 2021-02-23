@@ -1,0 +1,29 @@
+@api = http://192.168.1.4:5000
+@id = 602098e2923875180c3bc45e
+###
+GET {{api}}/videos
+
+###
+GET {{api}}/video/{{id}}
+
+###
+POST {{api}}/newvideo
+Content-Type: application/json
+
+{
+    "title": "Fetching rendered application",
+    "description": "A recursive application made in react",
+    "url": "http://192.168.1.4:3000/"
+}
+
+###
+DELETE {{api}}/delvideo/{{id}}
+
+###
+PUT {{api}}/putvideo/{{id}}
+Content-Type: application/json
+
+{
+    "title": "MERN stack 1",
+    "description": "This is a complete Fazt video about backend"
+}

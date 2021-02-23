@@ -1,0 +1,131 @@
+body{
+
+    background: #222222;
+    color: #FFFFFF;
+}
+
+.table{
+
+    color: #FFFFFF;
+}
+
+.desc{
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+tr:hover{
+
+    background:#2F2F2F;
+}
+
+.no-hover:hover{
+    background: #222222;
+    color: #FFFFFF;
+}
+
+.actionButton{
+
+    display: inline-block;
+    width: fit-content;
+    height: fit-content;
+    background-color: #333333;
+    color: #FFFFFF;
+    padding: 2px;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-decoration:none;
+    border-radius: 5px;
+}
+
+.actionButton:hover{
+    background: #444444;
+    color: #FFFFFF;
+}
+
+.operations{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 200px;
+}
+.operator{
+
+    text-align: center;
+    min-width: 200px;
+}
+
+.form-title{
+
+    margin-bottom: 20px;
+}
+
+h1{
+
+    font-size:48px;
+
+}
+
+.falseTask{
+
+    background: #333344;
+}
+
+.trueTask{
+
+    background: #223322;
+}
+
+.falseIcon{
+
+    display: none;
+}
+
+.trueIcon{
+
+    display: inline;
+}
+
+.contains{
+    max-width: 700px;
+    margin:auto;
+    margin-top: 50px;
+}
+
+h6{
+
+    margin-left: 15px;
+    margin-bottom: 30px;
+}
+
+form{
+
+    background-color: #333333;
+    padding: 30px;
+    margin: 20px;
+    padding-top: 15px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+.elInTab0{
+
+    display: none;
+}
+
+#date{
+
+    margin-bottom: 30px;
+}
+
+.dueDate{
+
+    margin-bottom:10px;
+}
+
+table{
+
+    margin-top:30px;
+}

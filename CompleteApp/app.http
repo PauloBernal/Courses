@@ -1,0 +1,6 @@
+@api = http://localhost:5000
+
+@id = 0000
+
+### Getting Page
+GET {{api}}/notes/get

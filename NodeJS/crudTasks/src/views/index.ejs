@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <%- include ("partials/head.html") %>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+    <%#- include ("partials/navigation.html") %>
+    <div class="container">
+        <div class="contains">
+            <h1><%= title %></h1>
+            <h6>Created by PauloBA</h6>
+            <form action="/add" method="POST">
+                <legend class="form-title">
+                    Add a task
+                </legend>
+                <div class="form-group">
+                    <input type="text" id="title" maxlength="20" class="form-control" name="title" placeholder="Write a title for your task..." required>
+                </div>
+                <div class="form-group desc">
+                    <textarea class="form-control" maxlength="50" name="description" rows="1" cols="50" placeholder="Add a description of the task..."></textarea>
+                </div>
+                <div class="form-group">
+                <label class="dueDate">Enter a deadline to finish the task</label>
+                    <input type="date" id="date" class="form-control" name="date">
+                </div>
+                <button class="btn btn-primary">
+                    Add
+                </button>
+            </form>
+            </div>
+        <hr>
+        <table class="table table-bordered <%= 'elInTab' + tasks.length %>">
+            <thead>
+                <tr class="no-hover">
+                    <th>#</th>
+                    <th>Title</th>
+                    <th>Description</th>
+                    <th>Deadline</th>
+                    <th class="operator">Operations</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% for (var i = 0; i < tasks.length; i++){ %>
+                <tr>
+                    <td><%= i + 1 %> </td>
+                    <td>
+                        <strong>
+                            <%= tasks[i].title %>
+                        </strong>
+                    </td>
+                    <td>
+                        <%= tasks[i].description %> 
+                    </td>
+                    <td>
+                        <%= tasks[i].date %> 
+                    </td>
+                    <td class="operations">
+                            <a class="actionButton <%= tasks[i].status + 'Task' %> " href="/turn/<%= tasks[i]._id %>">
+                                <i class="fas fa-check <%= tasks[i].status + 'Icon' %>"></i> Done</a>
+                            <a id="delete" class="actionButton" href="/del/<%= tasks[i]._id %>">Delete</a>
+                    </td>
+                </tr>
+                <% } %> 
+            </tbody>
+        </table>
+    </div>
+    <script>
+       document.getElementById('title').focus(); 
+       document.getElementById('delete').addEventListener('click', (e) => {
+           let response = confirm('Are you sure to delete this task?');
+           if (!response){
+               e.preventDefault()
+           }
+       })
+    </script>
+</body>
+</html>

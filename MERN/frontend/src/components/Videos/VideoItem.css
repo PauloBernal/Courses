@@ -1,0 +1,8 @@
+.vs-card {
+    border: 3px solid transparent;
+    cursor: pointer;
+}
+.vs-card:hover {
+    border: 1px solid #666666;
+    background: #333333;
+}

@@ -1,0 +1,25 @@
+body{
+    background: #131C43;
+    color: #FFFFFF
+}
+
+.profilePhoto{
+    width: 550px;
+    margin-top: 30px;
+}
+
+.container{
+    width: fit-content;
+    margin: auto;
+}
+
+h3{
+    display: inline-block;
+    width:fit-content;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.nav-item{
+    margin-left: 20px;
+}

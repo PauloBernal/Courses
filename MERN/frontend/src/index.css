@@ -1,0 +1,89 @@
+body {
+
+    color: #EEEEEE;
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    font-size: 18px;
+    padding-top: 70px;
+    padding-bottom: 90px;
+}
+
+.navBar {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100vw;
+    box-shadow: 0px 5px 6px #222;
+}
+
+h2 {
+
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.videoDesc {
+    text-align: justify;
+}
+
+.videoURL {
+
+    text-decoration: none;
+    color: #9999FF
+}
+
+.videoURL:hover {
+    text-decoration: underline;
+    color: #FFFFFF;
+}
+
+.videoForm {
+    width: 80vw;
+    margin: auto;
+    max-width: 600px;
+    margin-top: 30px
+}
+
+.noContent {
+    background-color: #2F2F2F;
+    width: 80vw;
+    height: fit-content;
+    padding: 40px 0;
+    margin: auto;
+    text-align: center;
+    border-radius: 30px;
+    margin-top: 50px;
+    max-width: 600px;
+}
+
+.ncCreateVideo {
+    display: block;
+    margin-top: 10px;
+}
+
+.card {
+    border-radius: 30px;
+    padding: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-height: 350px;
+}
+
+.addVideo {
+    position: fixed;
+    width: fit-content;
+    padding: 10px 20px;
+    margin: auto;
+    font-size: 18px;
+    bottom: 30px;
+    box-shadow: -3px 3px 6px #111;
+    left: 40vw;
+}
+h3 {
+    margin-bottom: 15px;
+    margin-top: -5px;
+}
+h3:hover {
+    color: #999999;
+    text-decoration: underline;
+}
