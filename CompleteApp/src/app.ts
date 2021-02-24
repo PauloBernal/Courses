@@ -9,6 +9,8 @@ const expHan = require('express-handlebars');
 const metOv = require('method-override');
 const expSes = require('express-session');
 const flash = require('connect-flash');
+const passport = require('passport')
+require('./config/passport');
 
 // Settings
 app.set('port', config.SERVER_PORT);
@@ -31,14 +33,24 @@ app.use(expSes({
   saveUninitialized: true
 }))
 app.use(morgan('dev'));
+app.use(passport.initialize());
+app.use(passport.session())
 app.use(flash());
 
 // Global Variables
 app.use((req, res, next) => {
   res.locals.successMsg = req.flash('successMsg');
   res.locals.errorMsg = req.flash('errorMsg');
+  res.locals.error = req.flash('error');
+  res.locals.user = req.user || null;
+  try {
+    res.locals.name = req.user.username
+  }
+  catch (err) {
+    console.log(err.toString())
+  }
   next();
-})
+});
 
 // routes
 app.use(router);

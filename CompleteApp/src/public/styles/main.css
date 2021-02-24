@@ -266,4 +266,42 @@ body {
   -webkit-box-shadow: 0.2px 0.2px 6px #203A43;
           box-shadow: 0.2px 0.2px 6px #203A43;
 }
+
+.signInFrame {
+  border-radius: 20px;
+  width: 80%;
+  margin: auto;
+  padding: 10px;
+  background: #2C5364;
+  max-width: 570px;
+}
+
+.signInFrame .signInHeader {
+  background: #203A43;
+  border-radius: 20px 20px 0 0;
+  width: 95%;
+  margin: auto;
+  -webkit-box-shadow: 3px 3px 6px #0F2027;
+          box-shadow: 3px 3px 6px #0F2027;
+  margin-bottom: 20px;
+}
+
+.signInFrame .signInHeader .signInTitle {
+  text-align: center;
+}
+
+.signInFrame .signInBody input {
+  width: 95%;
+  margin: auto;
+}
+
+.signInFrame .signInBody .signInButton {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 5px 20px;
+  margin: auto;
+  margin-top: 30px;
+}
 /*# sourceMappingURL=main.css.map */

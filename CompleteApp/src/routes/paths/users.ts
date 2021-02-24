@@ -1,5 +1,13 @@
 import { RequestHandler } from 'express';
 const User = require('../../models/User');
+const bcrypt = require('bcryptjs')
+
+
+const encryptPassword = async (password) => {
+  const salt = await bcrypt.genSalt(10);
+  const hash = bcrypt.hash(password, salt);
+  return hash;
+};
 
 export const signin: RequestHandler = (req, res) => {
   const path = './users/signin';
@@ -19,16 +27,18 @@ export const signupData: RequestHandler = async (req, res) => {
     if (!userFound) {
       if (password.length > 8) {
         console.log('Correct Password')
-        const newUser = new User({username, email, password})
+        const newUser = new User({ username, email, password })
+        console.log(password)
+        newUser.password = await encryptPassword(password)
         console.log('User Added Successfully');
         console.log(newUser)
         try {
           const savedUser = await newUser.save();
+          res.redirect('/users/signin');
         }
         catch (error) {
           console.log(error.toString())
         }
-        res.redirect('/notes');
       }
       else {
         req.flash('errorMsg', 'The password must contain at least 8 characters');
@@ -47,4 +57,9 @@ export const signupData: RequestHandler = async (req, res) => {
     req.flash('errorMsg', 'Try with the same password');
     res.redirect('/users/signup');
   }
+}
+
+export const logout = async (req, res) => {
+  req.logout();
+  res.redirect('/');
 }
