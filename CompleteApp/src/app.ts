@@ -45,6 +45,7 @@ app.use((req, res, next) => {
   res.locals.user = req.user || null;
   try {
     res.locals.name = req.user.username
+    res.locals.userid = req.user.id
   }
   catch (err) {
     console.log(err.toString())

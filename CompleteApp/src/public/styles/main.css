@@ -60,6 +60,7 @@ body {
 .navbar .navbarItem .navbarLink {
   color: #BBBBBB;
   padding-left: 20px;
+  padding-right: 20px;
 }
 
 .navbar .navbarItem .navbarLink:hover {
@@ -140,7 +141,7 @@ body {
 
 .notesContainer .note {
   margin: 20px auto;
-  background: #2C5364;
+  background: #0F2027;
   padding: 2px;
   border-radius: 20px;
   max-width: 600px;
@@ -189,7 +190,8 @@ body {
 }
 
 .notesContainer .note .noteBody {
-  background: #0F2027;
+  background: #BBBBBB;
+  color: #111;
   width: 99%;
   margin: auto;
   border-radius: 0 0 20px 20px;
@@ -203,7 +205,7 @@ body {
   width: -moz-fit-content;
   width: fit-content;
   max-width: 90%;
-  color: #BBBBBB;
+  color: #111;
   font-weigth: lighter;
 }
 
